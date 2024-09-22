@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <h1>Test Products</h1>
+    <form action="{% url 'create_checkout_session' %}" method="post">
+        {% csrf_token %}
+        <!-- زر المنتج الأول -->
+        <button type="submit" name="price_id" value="price_1Po10GJG8pA6oBul77onLcmV">Buy Product 1</button>
+    </form>
+    
+    <form action="{% url 'create_checkout_session' %}" method="post">
+        {% csrf_token %}
+        <!-- زر المنتج الثاني -->
+        <button type="submit" name="price_id" value="price_1PoTf5JG8pA6oBulTR2YfLUm">Buy Product 2</button>
+    </form>
+    
+    <form action="{% url 'create_checkout_session' %}" method="post">
+        {% csrf_token %}
+        <!-- زر المنتج الثالث -->
+        <button type="submit" name="price_id" value="price_1PoTgsJG8pA6oBulquxORBs4">Buy Product 3</button>
+    </form>
+</body>
+</html>
