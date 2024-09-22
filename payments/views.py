@@ -6,8 +6,7 @@ from django.conf import settings
 # إعداد مفتاح API الخاص بـ Stripe مباشرة هنا
 stripe.api_key = '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'
 
-YOUR_DOMAIN = "http://127.0.0.1:8000"
-
+YOUR_DOMAIN = "https://test120-zeta.vercel.app"
 def index(request):
     return render(request, 'checkout.html')
 
